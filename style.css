@@ -1,0 +1,598 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #efefef;
+    color: #252525;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.3);
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+}
+.nav-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 16px;
+}
+.nav-left .logo{
+    width: 40px;
+    margin: 5px 8px;
+    cursor: pointer;    
+}
+.nav-left .logo img{
+    width: 100%;
+    border-radius: 50%;
+}
+.nav-left .search-box{
+    width: 230px;
+    height: 40px;
+    background-color: #efefef;
+    border-radius: 20px;
+    margin-left: 4px;
+    padding: 0 8px;
+    position: relative;
+}
+.nav-left .search-box i{
+    color: #919191;
+    gap: 5px;
+    line-height: 40px;
+}
+.nav-left .search-box input{
+    background-color: transparent;
+    outline: none;
+    border: 0;
+    gap: 4px;
+    width: 150px;
+    font-size: 14px;
+    
+}
+.nav-center{
+    /* margin-right: 30px; */
+    width: 120px;
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+
+}
+.nav-center i {
+    width: 110px;
+    background-color: none;
+    border-radius: 10px;
+    font-size: 22px;
+    padding: 13px 40px;
+    color: #646262;
+
+}
+
+    .nav-center .fa-house{
+        color:blue;
+        position: relative;
+    }
+    .nav-center .fa-house::after{
+        content:'';
+        background: blue;
+        width:100%;
+        height: 2px;
+        bottom: -6px;
+        left:6px;
+        position: absolute;
+    
+    
+        
+    }
+.nav-center a i:hover{
+    background-color: #efefef;
+    color: #252525;
+}
+.nav-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.nav-right img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    line-height: 45px;
+    margin-right: 16px;
+    margin-left: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.nav-right i{
+    width: 40px;
+    height: 40px;
+    background-color: #efefef;
+    border-radius: 50%;
+    margin-left: 8px;
+    padding: 10px;
+    font-size: 22px;
+   
+}
+.nav-right i:hover{
+    background-color:#b9b7b7;
+    
+}
+
+/* ...main-left- section........ */
+.main{
+    display: flex;
+    margin-top: 60px;
+}
+.main-left{
+    width: 24%;
+    height: 92vh;
+    overflow: hidden; 
+    overflow-y: auto;
+     position: fixed;
+}
+
+ .main-left::-webkit-scrollbar{
+    width: 5px;
+}
+.main-left::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background-color: #f7f2f1;
+}
+.main-left:hover::-webkit-scrollbar-thumb{
+    background-color:#959494;
+} 
+.img{
+    width: 350px;
+    display: flex;
+    height: 40px;
+    margin: 5px 12px;
+    cursor: pointer;
+   align-content: center;
+    
+align-items: center;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img img{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    margin: 15px 12px;
+}
+.img i{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 15px 12px;
+} 
+.img:hover{
+ background-color: #dbd5d5;
+ border-radius: 10px;
+}
+.img p{
+    padding: 18px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #252525;
+}
+/* .hr{
+    width: 20%;
+    height: 1px;
+    background-color:rgb(45, 44, 44);
+    margin: 10px;
+} */
+.shortscut{
+    display: flex;
+    align-items: center;
+    gap: 140px;
+    /* justify-content: space-between; */
+    margin: 20px 12px;
+}
+.shortscut a{
+    text-decoration: none;
+}
+.shortscut p{
+    font-size: 17px;
+    font-weight: 400;
+}
+.lastline{
+    margin-top:  110px;
+    margin-left: 20px;
+}
+.lastline a{
+    text-decoration: none;
+    font-style: normal;
+    color: #000;
+    font-size: 12px;
+}
+
+
+/* ...... right bar .....css..... */
+
+  .main-right{
+    width: 23%;
+    height: 92vh;
+    margin-top: 60px;
+    
+    margin-right: 10px;
+    margin-left: 76%;
+    /* position: absolute; */
+    position: fixed;
+    top: 20px;
+    padding: 12px 0;
+    overflow: hidden;
+    overflow-y: scroll ;
+  
+} 
+.main-right::-webkit-scrollbar{
+    width: 5px;
+}
+.main-right::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background-color: #f2f2f2;
+}
+.main-right:hover::-webkit-scrollbar-thumb{
+    background-color: #bcbbbb;
+}
+
+
+
+
+
+
+
+
+
+.contact-section{
+   
+    width: 100%;
+    cursor: pointer;
+
+}
+.contact-links{
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    padding: 0 8px;
+    cursor: pointer;
+}
+.contact-links:hover{
+    background-color: #e8e7e7;
+    border-radius: 7px;
+}
+
+.contact-links img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.contact-links p{
+    padding-left: 18px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.online{
+   position: relative; 
+}
+.online::after{
+    content: '';
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: rgb(24, 205, 45);
+    bottom: 6px;
+    right: 1px;  
+}
+.contact-search {
+    display: flex;
+    align-items: center;
+    margin-right: 6px;
+
+}
+.contact-search .icon{
+display: flex;
+align-items: center;
+gap: 10px
+}
+.contact-search  h4{
+    flex-grow: 1;
+    font-size: 16px;
+}
+.contact-search .icon{
+    gap: 15px;
+}
+.contact-section .paragraph{
+    margin-top: 10px;
+}
+
+
+/* .........main-center css start from here..... */
+
+ .main-center{
+    width: 45%;
+    margin-left: 28%;
+    /* position: fixed; */
+  height: 100%;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    padding: 20px 20px 0 20px;
+  
+    overflow-y: auto;
+   
+}
+.top-box{
+    width: 100%;
+    height: 280px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    background-color: #fff;
+    padding: 20px 10px;
+    border-radius: 10px;
+}
+.my-story{
+    width: 145px;
+    height: 240px;
+    margin: 0 5px;
+    overflow: hidden;
+    box-shadow: 0 1px 9px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+.my-story img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.upload{
+width: 100%;
+height: 80px;
+position: relative;
+bottom: 50px;
+background-color: #fff;
+cursor: pointer;
+}
+.upload img{
+width: 30px;
+height: 30px;
+border-radius: 50%;
+display: flex;
+margin: 0 auto;
+position: relative;
+bottom: 15px;
+}
+.upload p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 10px;
+    font-weight: 600;
+    font-size: 13px;
+    
+}
+.friends-story{
+    width: 145px;
+    height: 240px;
+    margin: 0 5px;
+    overflow: hidden;
+    box-shadow: 0 1px 9px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+.friends-story img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.friend-profile{
+    position: relative;
+    bottom: 240px;
+    margin-left: 10px;
+}
+.friend-profile .circle{
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background: #27cc37;
+    border: 1px solid#fff;
+    position: relative;
+    bottom: 15px;
+    left: 25px;
+
+}
+.friend-profile img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #45abff;
+}
+.friend-name{
+    position: relative;
+    bottom: 80px;
+    padding: 0 9px;
+}
+.friend-name p{
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+} 
+
+/* ....center post section css... */
+
+.create-post{
+    width: 100%;
+    height: auto;
+    background: #fff;
+    padding: 10px 15px;
+    border-radius: 7px;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.3);
+    margin: 10px 0;
+
+}
+.create-post .tpost{
+    display: flex;
+    align-items: center;
+}
+.create-post .tpost img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    
+}
+ .tpost input{
+   width: 90%;
+   padding: 10px;
+   margin-left: 20px;
+   border: 0;
+   outline: none;
+   background-color: #f2f2f2;
+   border-radius: 30px;
+   font-size: 17px;
+}
+.tpost input:hover{
+    background-color:#e3e3e3;
+    cursor: pointer;
+}
+hr{
+    margin: 20px;
+}
+.tbottom{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 10px 10px;
+    padding: 0 10px;
+    gap: 20px;
+    cursor: pointer;
+}
+.post-icon{
+    width: 60%;
+    height: 40px;
+    padding: 10px ;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.tbottom .post-icon:hover{
+    background-color: #e3e3e3;
+    border-radius: 15px;
+}
+.friend-post{
+    margin: 10px 0;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    padding: 10px 15px;
+    border-radius: 7px;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.3);
+}
+.friends-ptop{
+    display: flex;
+    justify-content:space-between;
+}
+
+.img-name{
+    display: flex;
+    margin-bottom: 10px;
+}
+.friends-ptop .img-name img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-top: 1px;
+}
+.friends-name:hover{
+    text-decoration: underline;
+}
+.friends-name{
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 3px;
+}
+.friends-name .time{
+    font-size: 13px;
+    color: #919191;
+    margin: 3px 3px;
+}
+.friends-name .time i{
+    font-size: 13px;
+}
+.friends-ptop .menu{
+    width: 35px;
+    height: 35px;
+    padding:  7px 7px;
+    border-radius: 50%;
+}
+.friends-ptop .menu:hover{
+    background-color:#efefef;
+    cursor: pointer;
+}
+ .friend-post img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.friend-post .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.friend-post .post-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.friend-post .post-icons img{
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+}
+.friend-post .post-icons p{
+    text-decoration: underline;
+
+}
+.info .comment{
+    display: flex;
+    align-items: center;
+}
+.info .comment p{
+    padding: 0 12px;
+    font-size: 15px;
+    color: #919191;
+}
+hr{
+    height: 1px;
+}
+
+
